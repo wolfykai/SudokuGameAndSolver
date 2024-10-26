@@ -1,3 +1,7 @@
+/* 
+* &copy; 2024 Kai Wolf. All rights reserved.
+*/
+
 
 /*##################### Main Functions #####################*/
 
