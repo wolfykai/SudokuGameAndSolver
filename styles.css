@@ -23,15 +23,15 @@ body {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr);
-    width: 720px;
-    height: 720px;
+    width: 70vh;
+    height: 70vh;
     border: 3px solid black;
     margin: 20px auto;
 }
 
 .cell {
-    width: 80px; /* Zellenbreite anpassen */
-    height: 80px; /* Zellenhöhe anpassen */
+    width: 100%; /* Zellenbreite anpassen */
+    height: 100%; /* Zellenhöhe anpassen */
     font-size: 1.5em;
     text-align: center;
     border: 1px solid #ccc;
@@ -82,6 +82,11 @@ button, select {
     cursor: pointer;
     background-color: #585e59;
     color: white;
+}
+
+p {
+    font-size: 1.2em;
+    color: #585e59;
 }
 
 footer {
