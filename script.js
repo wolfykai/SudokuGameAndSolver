@@ -13,7 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
         cell.setAttribute("type", "number"); 
         cell.setAttribute("maxlength", "1"); 
         cell.setAttribute("min", "1");
-        cell.setAttribute("max", "9"); 
+        cell.setAttribute("max", "9");
+        
+        // Prevent more than one digit
+        cell.addEventListener("input", (e) => {
+            if (e.target.value.length > 1 || e.target.value < 1 || e.target.value > 9) {
+                e.target.value = e.target.value.slice(0, 1); // Keep only first digit
+            }
+        });
+
         board.appendChild(cell);
     }
 });
